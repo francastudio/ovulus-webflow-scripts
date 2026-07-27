@@ -24,13 +24,13 @@ Antes havia **6 requests** sitewide no footer do Webflow (`NavbarScroll`, `Navba
 **Home → Page settings → Custom code → Footer:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.0/dist/ovulus-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.1/dist/ovulus-home.js" defer></script>
 ```
 
 **Nossa clínica → Page settings → Custom code → Footer:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.0/dist/ovulus-clinica.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.1/dist/ovulus-clinica.js" defer></script>
 ```
 
 Linha `v1` (último patch sem pin):
@@ -50,11 +50,11 @@ Motion (hero + scroll reveals) vive no Embed CSS do Designer (P2), não neste bu
 
 ### `ovulus-home.js`
 - Treatments tabs + deep links `#tratamento-*` + pause iframes
-- Team expand (mobile) + team details toggle
+- Team expand (mobile); bios via native <details>
 - Swiper init (testimonials / blog / mídia) — espera `window.Swiper`
 
 ### `ovulus-clinica.js`
-- Team expand + team details + Swiper init (sem treatments) — autoplay + pagination
+- Team expand + Swiper init (sem treatments) — autoplay + pagination
 
 ## Desenvolvimento
 
