@@ -18,19 +18,19 @@ Antes havia **6 requests** sitewide no footer do Webflow (`NavbarScroll`, `Navba
 **Site settings → Custom code → Footer** (sitewide):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.0/dist/ovulus-site.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.1/dist/ovulus-site.js" defer></script>
 ```
 
 **Home → Page settings → Custom code → Footer:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.0/dist/ovulus-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.1/dist/ovulus-home.js" defer></script>
 ```
 
 **Nossa clínica → Page settings → Custom code → Footer:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.0/dist/ovulus-clinica.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.1/dist/ovulus-clinica.js" defer></script>
 ```
 
 Linha `v1` (último patch sem pin):
@@ -54,7 +54,7 @@ Linha `v1` (último patch sem pin):
 - Swiper init (testimonials / blog / mídia) — espera `window.Swiper`
 
 ### `ovulus-clinica.js`
-- Team expand + team details + Carrosséis CSS (sem treatments / sem Swiper)
+- Team expand + team details + Swiper init (sem treatments) — autoplay + pagination
 
 ## Desenvolvimento
 
