@@ -18,19 +18,19 @@ Antes havia **6 requests** sitewide no footer do Webflow (`NavbarScroll`, `Navba
 **Site settings → Custom code → Footer** (sitewide):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.1/dist/ovulus-site.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.0/dist/ovulus-site.js" defer></script>
 ```
 
 **Home → Page settings → Custom code → Footer:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.1/dist/ovulus-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.0/dist/ovulus-home.js" defer></script>
 ```
 
 **Nossa clínica → Page settings → Custom code → Footer:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.2.1/dist/ovulus-clinica.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/francastudio/ovulus-webflow-scripts@v1.3.0/dist/ovulus-clinica.js" defer></script>
 ```
 
 Linha `v1` (último patch sem pin):
@@ -41,12 +41,12 @@ Linha `v1` (último patch sem pin):
 
 ## O que cada arquivo faz
 
-### `ovulus-site.js` (sitewide)
+### `ovulus-site.js` (sitewide) — chrome only desde v1.3.0
 1. **`--navbar-height`** — sync da altura da `#site-navbar`
 2. **Hide-on-scroll** — some ao rolar para baixo; volta ao subir (requisito da cliente)
 3. **Mobile nav** — drawer `#mobile-nav` + backdrop + Escape
-4. **Card reveal** — IntersectionObserver em cards/FAQ
-5. **Text motion** — hero stagger + títulos de seção (respeita `prefers-reduced-motion`)
+
+Motion (hero + scroll reveals) vive no Embed CSS do Designer (P2), não neste bundle.
 
 ### `ovulus-home.js`
 - Treatments tabs + deep links `#tratamento-*` + pause iframes
